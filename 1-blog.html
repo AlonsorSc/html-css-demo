@@ -10,10 +10,10 @@
 <body>
     <header>
         <nav>
-            <a href="test">Мой блог</a>
-            <a href="test">HTML и CSS</a>
-            <a href="test">Frontend</a>
-            <a href="test">Backend</a>
+            <ul><a href="test">Мой блог</a></ul>
+            <ul><a href="test">HTML и CSS</a></ul>
+            <ul><a href="test">Frontend</a></ul>
+            <ul><a href="test">Backend</a></ul>
             <div>
                 <form action="/test" method="get">
                     <label for="search"></label>
@@ -23,26 +23,27 @@
         </nav>
     </header>
     <main>
-        <div>
+        <section>
+            <!--Никита вопрос тут, чтоб не забыть. Такого рода блоки с текстом, которые отличаются друг от друга в div или
+            просто прописывать заголовками/параграфами и не париться? Я думад с позиции будущего CSS, чтоб стилизовать каждый
+            блок с текстом отдельно и не групировать их. -->
             <p>FRONTEND 12 мая 2024</p>
-        </div>
-        <div>
-            <h1>
+            <h2>
                 Теория цвета - Как цвет влияет на поведение потребителей
-            </h1>
-        </div>
-        <div>
-            <img src="./images/girl-developer.png" alt="Аватар Натальи Васильевой">
+            </h2>
             <div>
-                <h3>Наталья Васильева</h3>
-                <p>Разработчик</p>
+                <img src="./images/girl-developer.png" alt="Аватар Натальи Васильевой">
+                <div>
+                    <h3>Наталья Васильева</h3>
+                    <p>Разработчик</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <img src="./images/main-desktop-img.png" alt="Основное изображение эплмоноблока(непомнюназвание)"
-                width="896px" height="594px">
-        </div>
-        <div>
+            <div>
+                <img src="./images/main-desktop-img.png" alt="Основное изображение эплмоноблока(непомнюназвание)"
+                    width="896px" height="594px">
+            </div>
+        </section>
+        <section>
             <p>
                 Теория цвета — это особенности эмоционального восприятия человеком <br />
                 тех или иных цветовых решений. Цвета и различные их комбинации <br />
@@ -66,7 +67,7 @@
                 продукта) дают положительную или отрицательную оценку товару, основываясь только на <br />
                 его цвете.
             </p>
-        </div>
+        </section>
     </main>
     <footer>
         <p>
