@@ -42,10 +42,6 @@
                 <input type="button" value="Кнопка button" />
                 <input type="submit" value="Кнопка submit" />
             </div>
-            <!--Рассмотрим работу Radio, checkbox, select-->
-            <div>
-
-            </div>
         </form>
 
         <!--Вынесем кнопку за пределы формы, кнопка не будет выполнять функции сабмита-->
@@ -54,13 +50,51 @@
             <button>Кнопка вне формы</button>
         </div>
 
-        <form action="https://www.youtube.com/results">
+        <form action="#">
             <!--Упражнение с запросом в YouTube через нашу форму-->
             <div>
                 <label for="search">Введите запрос</label>
                 <input type="search" placeholder="запрос..." id="search " name="search_query" />
                 <button type="submit">Найти</button>
             </div>
+            <!--Рассмотрим работу Radio, checkbox, select-->
+            <!--Checkbox-->
+            <div>
+                <label for="agree">Согласен с обработкой данных</label>
+                <input type="checkbox" name="agree" id="agree" checked>
+                <button type="submit">Найти</button>
+            </div>
+            <!--Radio-->
+            <div>
+                <label for="all">Поиск повсюду</label>
+                <input type="radio" name="search" id="all" value="all" />
+            </div>
+            <div>
+                <label for="YouTube">Поиск на YouTube</label>
+                <input type="radio" name="search" id="YouTube" value="YouTube" />
+            </div>
+            <!--Select-->
+            <div>
+                <label for="topic">Тематика </label>
+                <select name="topic" id="topic">
+                    <option value="1">Все</option>
+                    <optgroup label="Популярные">
+                        <option value="2">Животные</option>
+                        <option value="3" selected>Растения </option>
+                    </optgroup>
+                </select>
+            </div>
+            <!--Range-->
+            <div>
+                <label for="volume">Громкость</label>
+                <input type="range" name="volume" id="volume" min="0" max="10" step="2">
+            </div>
+            <!--textarea-->
+            <div>
+                <label for="text">Ввод текста</label>
+                <textarea name="text" id="text" rows="10" cols="10" placeholder="Оставить текст ></textarea>
+            </div>
+            <button>Поиск по YouTube</button>
         </form>
     </section>
 </body>
