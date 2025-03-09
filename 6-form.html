@@ -50,11 +50,19 @@
             <button>Кнопка вне формы</button>
         </div>
 
-        <form action="#">
+        <form action="https://www.youtube.com/results">
             <!--Упражнение с запросом в YouTube через нашу форму-->
             <div>
                 <label for="search">Введите запрос</label>
-                <input type="search" placeholder="запрос..." id="search " name="search_query" required title="Нужно ввести запрос"/>
+                <input type="search" placeholder="запрос..." 
+                id="search " 
+                name="search_query" 
+                minlength="3" 
+                maxlength="20" 
+                pattern="/^\d+$/"
+                required/>
+                <input type="email" name="email" id="">
+                <input type="url" name="url" id="">
                 <button type="submit">Найти</button>
             </div>
             <!--Рассмотрим работу Radio, checkbox, select-->
