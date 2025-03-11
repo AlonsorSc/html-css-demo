@@ -1,0 +1,57 @@
+/* Указывать Line height 100% и font-weight 400/normal и 700/bold не стал, они дефолтные везде. 
+А вот со шрифтами вопрос, надо ли везде ставить один и тот-же шрифт, если он везде используется один?*/
+
+body {
+    /* Не разобрался с градиентами, очень пытался. В итоге поставил просто цвет фона из фигмы без двух инлайновых градиентов*/
+    background-color: #F39494;
+}
+
+main {
+    background-color: #FFFEFE;
+}
+
+input {
+    background-color: #F5F5F5;
+}
+
+a {
+    color: #089FE0;
+}
+
+h1 {
+    color: #333333;
+    font-size: 36px;
+    /* Немного не понял насчёт backline шрифта, как его верно подобрать к тому, 
+    который указан в figma, в нашем случае к Open Sans. Я исходил из того, что 
+    это семейство sans-serif, вот я backline взял sans-serif и он вроде похож. 
+    Если я верно понял логику, будет любопытно узнать. */
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    color: #666666;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+::placeholder {
+    color: #999999;
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    background-color: #089FE0;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+label {
+    /* Если бы шрифт лейбла в чекбоксе был бы такого-же размера, как и шрифт параграфа 
+    "Уже есть аккаунт? Войти", то можно было бы объеденить. Дизайнеры*/
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
