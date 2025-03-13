@@ -5,31 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2-form</title>
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
     <main>
-        <h1>Регистрация</h1>
-        <p>Уже есть аккаунт? <a href="test">Войти</a></p>
+        <div class="title">
+            <h1>Регистрация</h1>
+        </div>
+        <div class="auth">
+            <p>
+                <span class="account">Уже есть аккаунт?</span>
+                <span><a href="test">Войти</a></span>
+            </p>
+        </div>
         <form action="/test/">
-            <div>
+            <div class="company-name">
                 <input type="text" name="company" placeholder="Имя компании" required />
             </div>
-            <div>
+            <div class="first-name">
                 <input type="text" name="name" placeholder="Имя" required />
+            </div>
+            <div class="second-name">
                 <input type="text" name="surename" placeholder="Фамилия" required />
             </div>
-            <div>
+            <div class="mail">
                 <label for="email"></label>
-                <input type="email" name="email" placeholder="E-mail" required />
+                <div>
+                    <input type="email" name="email" placeholder="E-mail" required />
+                </div>
             </div>
-            <div>
-                <button>Зарегистрироваться</button>
-                <img src="./images/2-form/Arrow 1.svg" alt="иконка стрелки вправо" />
+            <div class="registration">
+                <button>
+                    Зарегистрировать
+                    <img src="/images/2-form/Arrow 1.svg" alt="иконка стрелки вправо" />
+                </button>
             </div>
-            <div>
-                <label for="rules">Я прочитал и принимаю <a href="test">Условия использования</a></label>
-                <input type="checkbox" name="rules" id="rules" required />
+            <div class="">
+                <label for="rules">Я прочитал и принимаю<a href="test">Условия использования</a></label>
+                <div class="checkbox">
+                    <input type="checkbox" name="rules" id="rules" required />
+                </div>
             </div>
         </form>
     </main>
