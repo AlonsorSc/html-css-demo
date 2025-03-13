@@ -1,45 +1,64 @@
 body {
     background-color: #374151;
-}
-
-.logo,
-a {
     color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 400;
     font-family: roboto, sans-serif;
-}
-
-::placeholder {
-    color: #FFFFFF;
-    font-size: 16px;
-    opacity: 0.6;
 }
 
 input {
     background-color: #1F2937;
-    ;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.logo {
+    font-size: 18px;
+}
+
+::placeholder {
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.author {
+    line-height: 28px;
+}
+
+.author-name {
+    font-size: 16px;
 }
 
 .date-front,
-.develop-post {
-    color: #FFFFFF;
+.author-post {
     font-size: 14px;
-    font-family: roboto, sans-serif;
     opacity: 0.6;
 }
 
 .title {
-    color: #FFFFFF;
     font-size: 24px;
-    font-weight: 400;
     line-height: 38px;
-    font-family: roboto, sans-serif;
 }
 
-.author {
-    color: #FFFFFF;
-    font-size: 14px;
+.paragraph-first {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.paragraph-second {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.footer {
+    font-size: 16px;
     line-height: 28px;
-    font-family: roboto, sans-serif;
+    opacity: 0.6;
 }
