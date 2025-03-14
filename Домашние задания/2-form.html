@@ -19,7 +19,7 @@
                 <span><a href="test">Войти</a></span>
             </p>
         </div>
-        <form action="/test/">
+        <form action="/register" method="POST">
             <div class="company-name">
                 <input type="text" name="company" placeholder="Имя компании" required />
             </div>
@@ -27,13 +27,10 @@
                 <input type="text" name="name" placeholder="Имя" required />
             </div>
             <div class="second-name">
-                <input type="text" name="surename" placeholder="Фамилия" required />
+                <input type="text" name="surname" placeholder="Фамилия" required />
             </div>
             <div class="mail">
-                <label for="email"></label>
-                <div>
-                    <input type="email" name="email" placeholder="E-mail" required />
-                </div>
+                <input type="email" name="email" placeholder="E-mail" required />
             </div>
             <div class="registration">
                 <button>
@@ -41,8 +38,8 @@
                     <img src="/images/2-form/Arrow 1.svg" alt="иконка стрелки вправо" />
                 </button>
             </div>
-            <div class="">
-                <label for="rules">Я прочитал и принимаю<a href="test">Условия использования</a></label>
+            <div class="rules-agreement">
+                <label for="rules">Я прочитал и принимаю <a href="test">Условия использования</a></label>
                 <div class="checkbox">
                     <input type="checkbox" name="rules" id="rules" required />
                 </div>
