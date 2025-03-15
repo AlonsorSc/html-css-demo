@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с формами</title>
+</head>
+
+<body>
+    <section>
+        <form action="/test/">
+            <!--Разбор input, label, name-->
+            <div>
+                <div>
+                    <label for="email">Введите email</label>
+                    <input type="email" placeholder="Email пользователя" id="email" name="email" />
+                </div>
+                <label for="password">Введите пароль</label>
+                <input type="password" placeholder="Пароль пользователя" id="password" name="password" />
+                <label for="date">Выберите дату рождения</label>
+                <input type="date" placeholder="Выберите дату" id="date" name="date" />
+                <label for="color">Выберите цвет</label>
+                <input type="color" id="color" name="color" />
+                <!--Оборачиваем input в label, как в контейнер. При этом текст указываем строчно внутри label. -->
+                <label>
+                    <span>Выберите число</span>
+                    <input type="number" placeholder="Число от 1 до 99" />
+                </label>
+            </div>
+            <!--Дефолтная кнопка с ролью submit, находится внутри формы-->
+            <button>Кнопка</button>
+            <!--Разные типы кнопок-->
+            <div>
+                Виды кнопок, такие как submit и reset
+                <button type="submit">Кнопка submit</button>
+                <button type="reset">Сброс всех полей</button>
+            </div>
+            <!--Создание кнопки альтернативным способом через input-->
+            <div>
+                Кнопки сделанны альтернативным способом, через input
+                <input type="button" value="Кнопка button" />
+                <input type="submit" value="Кнопка submit" />
+            </div>
+        </form>
+
+        <!--Вынесем кнопку за пределы формы, кнопка не будет выполнять функции сабмита-->
+        <div>
+            Кнопка, сделана вне формы. Не выполняет роль submit
+            <button>Кнопка вне формы</button>
+        </div>
+
+        <form action="https://www.youtube.com/results">
+            <!--Упражнение с запросом в YouTube через нашу форму-->
+            <div>
+                <label for="search">Введите запрос</label>
+                <input type="search" placeholder="запрос..." 
+                id="search " 
+                name="search_query" 
+                minlength="3" 
+                maxlength="20" 
+                pattern="/^\d+$/"
+                required/>
+                <input type="email" name="email" id="">
+                <input type="url" name="url" id="">
+                <button type="submit">Найти</button>
+            </div>
+            <!--Рассмотрим работу Radio, checkbox, select-->
+            <!--Checkbox-->
+            <div>
+                <label for="agree">Согласен с обработкой данных</label>
+                <input type="checkbox" name="agree" id="agree" checked>
+                <button type="submit">Найти</button>
+            </div>
+            <!--Radio-->
+            <div>
+                <label for="all">Поиск повсюду</label>
+                <input type="radio" name="search" id="all" value="all" />
+            </div>
+            <div>
+                <label for="YouTube">Поиск на YouTube</label>
+                <input type="radio" name="search" id="YouTube" value="YouTube" />
+            </div>
+            <!--Select-->
+            <div>
+                <label for="topic">Тематика </label>
+                <select name="topic" id="topic">
+                    <option value="1">Все</option>
+                    <optgroup label="Популярные">
+                        <option value="2">Животные</option>
+                        <option value="3" selected>Растения </option>
+                    </optgroup>
+                </select>
+            </div>
+            <!--Range-->
+            <div>
+                <label for="volume">Громкость</label>
+                <input type="range" name="volume" id="volume" min="0" max="10" step="2">
+            </div>
+            <!--textarea-->
+            <div>
+                <label for="text">Ввод текста</label>
+                <textarea name="text" id="text" rows="10" cols="10" placeholder="Оставить текст"></textarea>
+            </div>
+            <button>Поиск по YouTube</button>
+        </form>
+    </section>
+</body>
+
+</html>
