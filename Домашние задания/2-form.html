@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-form</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Регистрация</h1>
+        <div class="auth">
+            <span class="account">Уже есть аккаунт?</span>
+            <span><a href="test">Войти</a></span>
+        </div>
+        <form action="/register" method="POST">
+            <div class="company-name">
+                <input type="text" name="company" placeholder="Имя компании" required />
+            </div>
+            <div class="first-name">
+                <input type="text" name="name" placeholder="Имя" required />
+            </div>
+            <div class="second-name">
+                <input type="text" name="surname" placeholder="Фамилия" required />
+            </div>
+            <div class="mail">
+                <input type="email" name="email" placeholder="E-mail" required />
+            </div>
+            <div class="registration">
+                <button>
+                    Зарегистрировать
+                    <img src="/images/2-form/Arrow 1.svg" alt="иконка стрелки вправо" />
+                </button>
+            </div>
+            <div class="rules-agreement">
+                <label for="rules">Я прочитал и принимаю <a href="test">Условия использования</a></label>
+                <div class="checkbox">
+                    <input type="checkbox" name="rules" id="rules" required />
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
