@@ -8,7 +8,7 @@ input {
     background-color: #1F2937;
 }
 
-nav a {
+a {
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -23,7 +23,8 @@ ul {
     font-size: 18px;
 }
 
-::placeholder {
+::placeholder,
+.footer {
     font-size: 16px;
     opacity: 0.6;
 }
@@ -42,7 +43,7 @@ ul {
     opacity: 0.6;
 }
 
-.title {
+h2 {
     font-size: 24px;
     line-height: 38px;
 }
@@ -55,10 +56,4 @@ ul {
 .paragraph-second {
     font-size: 16px;
     line-height: 30px;
-}
-
-.footer {
-    font-size: 16px;
-    line-height: 28px;
-    opacity: 0.6;
 }
