@@ -35,29 +35,29 @@ button {
     color: #999999;
     font-size: 16px;
     font-style: italic;
-  
-main {
-    background-color: #1E1F29;
-}
 
-h1 {
-    color: #FAFAFA;
-    font-size: 36px;
-    font-family: 'Fira Sans', monospace;
-}
+    main {
+        background-color: #1E1F29;
+    }
 
-label {
-    color: #AFB2BF;
-}
+    h1 {
+        color: #FAFAFA;
+        font-size: 36px;
+        font-family: 'Fira Sans', monospace;
+    }
 
-input,
-textarea,
-select {
-    background: #2E2D3D;
-    color: #fafafa;
-}
+    label {
+        color: #AFB2BF;
+    }
 
-button {
-    background-color: #6C38CC;
-    color: #fafafa;
-}
+    input,
+    textarea,
+    select {
+        background: #2E2D3D;
+        color: #fafafa;
+    }
+
+    button {
+        background-color: #6C38CC;
+        color: #fafafa;
+    }
