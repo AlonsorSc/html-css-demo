@@ -5,8 +5,15 @@
     font-weight: 400;
 }
 
+header a {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
 h1,
 h2 {
+    color: #050038;
     font-size: 48px;
     line-height: 56px;
     letter-spacing: 1px;
@@ -33,15 +40,17 @@ p {
 }
 
 .numberUsers {
+    color: #050038;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.25px;
 }
 
-.footerLinks {
+footer a {
     color: #FFFFFF;
     font-size: 16px;
     line-height: 24px;
+    text-decoration: none;
 }
 
 #heroButton {
