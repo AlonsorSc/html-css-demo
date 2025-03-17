@@ -23,6 +23,8 @@
     </header>
     <main>
         <section>
+            <!--Надо оборачиваеть заголовок в div? Судя по инспектору в CSS у H есть приоритет-->
+            <!--Пока оставил div, может для размещения на странице нужно в div?-->
             <h1>
                 Место для <br />
                 командной <br />
@@ -36,8 +38,18 @@
                 <input type="email" name="email" id="email">
                 <button id="heroButton">Начать бесплатно</button>
             </form>
-            <img src="/2 - Упражнения/1 - Miro/img/headerimage-without-text 1@2x.png"
-                alt="Основное окно интерфейса Miro" width="604px" height="461px">
+            <div class="paragraphCredit">Всегда бесплатно — кредитная карта не нужна</div>
+            <div>
+                <span class="numberUsers">45M+ пользователей</span>
+                <img src="/2 - Упражнения/1 - Miro/img/Walmart.svg" alt="Walmart icont" />
+                <img src="/2 - Упражнения/1 - Miro/img/Cisco.svg" alt="Cisco icon" />
+                <img src="/2 - Упражнения/1 - Miro/img/Deloitte.svg" alt="Deloitte icon" />
+                <img src="/2 - Упражнения/1 - Miro/img/Volvo.svg" alt="Volco icon" />
+            </div>
+            <div>
+                <img src="/2 - Упражнения/1 - Miro/img/headerimage-without-text 1@2x.png"
+                    alt="Основное окно интерфейса Miro" width="604px" height="461px">
+            </div>
         </section>
         <section>
             <h2>
@@ -45,15 +57,17 @@
                 где бы вы ни <br />
                 находились
             </h2>
-            <p>
+            <p class="paragraphSecond">
                 Работая в офисе, удалённо или в гибридном <br />
                 формате, с Miro ваша команда может общаться, сотрудничать <br />
                 и совместно заниматься творчеством в одном пространстве, из любой <br />
                 точки мира.
             </p>
             <a href="/test/" class="link">Узнать больше</a>
-            <img src="/2 - Упражнения/1 - Miro/img/IMAGE.png" alt="Изображение с разными видами доступов к сервису"
-                width="550px" height="535px">
+            <div>
+                <img src="/2 - Упражнения/1 - Miro/img/IMAGE.png" alt="Изображение с разными видами доступов к сервису"
+                    width="550px" height="535px">
+            </div>
         </section>
         <section>
             <img src="/2 - Упражнения/1 - Miro/img/3-image.png"
@@ -63,7 +77,7 @@
                 вкладки - всё <br />
                 уже здесь
             </h2>
-            <p>
+            <p class="paragraphSecond">
                 Редактируете ли вы документы в Google Docs, <br />
                 работаете над задачами в Jira или <br />
                 созваниваетесь в Zoom, Miro предлагает более <br />
@@ -78,10 +92,12 @@
         <div>
             &reg; 2023 Miro
         </div>
-        <div>
-            <a href="">Условия пользования</a>
-            <a href="">Политика конфиденциальности</a>
-            <a href="">Управление файлами cookies</a>
+        <div class="footerLinks">
+            <ul>
+                <li><a href="/test/">Условия пользования</a></li>
+                <li><a href="/test/">Политика конфиденциальности</a></li>
+                <li><a href="/test/">Управление файлами cookies</a></li>
+            </ul>
         </div>
     </footer>
 </body>
