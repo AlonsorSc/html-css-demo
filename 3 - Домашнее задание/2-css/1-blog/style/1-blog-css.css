@@ -1,59 +1,84 @@
-body {
-    background-color: #374151;
-    color: #FFFFFF;
+* {
     font-family: roboto, sans-serif;
-}
-
-input {
-    background-color: #1F2937;
-}
-
-a {
     color: #FFFFFF;
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
+    background-color: #374151;
 }
 
 .logo {
-    font-size: 18px;
+    background-color: #4B5563;
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
 }
 
-::placeholder,
-.footer {
+header>a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav a,
+nav ul {
+    text-decoration: none;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+form ::placeholder {
     font-size: 16px;
     opacity: 0.6;
 }
 
-.author {
-    line-height: 28px;
-}
-
-.author-name {
-    font-size: 16px;
+form input {
+    background-color: #1F293799;
+    width: 224px;
+    height: 40px;
+    border-radius: 100px;
 }
 
 .date-front,
 .author-post {
     font-size: 14px;
     opacity: 0.6;
+    text-align: center;
 }
 
-h2 {
+h1 {
     font-size: 24px;
     line-height: 38px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.author-name {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.main-image {
+    width: 896;
+    height: 594;
+    top: 397px;
+    left: 272px;
+    border-radius: 5px;
 }
 
 .paragraph-first {
     font-size: 20px;
     line-height: 32px;
+    letter-spacing: 0%;
 }
 
 .paragraph-second {
     font-size: 16px;
     line-height: 30px;
+    letter-spacing: 0%;
+}
+
+.footer {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    opacity: 0.6;
+    text-align: center;
 }
