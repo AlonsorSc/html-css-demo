@@ -16,14 +16,14 @@ header>a {
     text-decoration: none;
 }
 
-nav a,
-nav ul {
+.nav-list a,
+.nav-list ul {
     text-decoration: none;
     font-size: 16px;
     list-style-type: none;
 }
 
-form ::placeholder {
+input[placeholder="Поиск"] {
     font-size: 16px;
     opacity: 0.6;
 }
@@ -40,6 +40,13 @@ form input {
     font-size: 14px;
     opacity: 0.6;
     text-align: center;
+}
+
+.author-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 h1 {
