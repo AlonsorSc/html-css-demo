@@ -30,6 +30,30 @@ p {
     line-height: 24px;
 }
 
+.link:hover {
+    color: #1331cb;
+}
+
+#heroButton:hover {
+    background-color: #1331cb;
+}
+
+#heroButton:active {
+    background-color: #051fa1;
+}
+
+.heroForm input:focus {
+    background-color: aqua;
+}
+
+ul li:first-child {
+    color: aquamarine;
+}
+
+ul li:last-child {
+    color: red;
+}
+
 .paragraphSecond {
     opacity: 0.6;
 }

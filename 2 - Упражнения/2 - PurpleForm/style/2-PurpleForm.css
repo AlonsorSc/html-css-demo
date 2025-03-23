@@ -1,3 +1,7 @@
-input[type="email"] {
+.email input:invalid {
     background: red;
+}
+
+.telegram input:valid {
+    background: green;
 }
