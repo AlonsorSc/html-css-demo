@@ -46,12 +46,9 @@ p {
     background-color: aqua;
 }
 
-ul li:first-child {
-    color: aquamarine;
-}
 
-ul li:last-child {
-    color: red;
+p:not(.paragraphSecond) {
+    color: red
 }
 
 .paragraphSecond {
