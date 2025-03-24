@@ -51,6 +51,20 @@ p:not(.paragraphSecond) {
     color: red
 }
 
+nav ul {
+    list-style: none;
+}
+
+.sectionList {
+    list-style: none;
+
+    /* list-style: url(../img/Frame.jpg); */
+}
+
+.sectionList li::marker {
+content: url(../img/Frame.jpg);
+}
+
 .paragraphSecond {
     opacity: 0.6;
 }
