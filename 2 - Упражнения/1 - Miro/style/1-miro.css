@@ -46,7 +46,6 @@ p {
     background-color: aqua;
 }
 
-
 p:not(.paragraphSecond) {
     color: red
 }
@@ -62,7 +61,7 @@ nav ul {
 }
 
 .sectionList li::marker {
-content: url(../img/Frame.jpg);
+    content: url(../img/Frame.jpg);
 }
 
 .paragraphSecond {
