@@ -1,5 +1,4 @@
 * {
-    background-color: #FFFFFF;
     color: #050038;
     font-family: Roboto;
 }
@@ -85,9 +84,14 @@ footer a {
 #heroButton {
     background-color: #4262FF;
     color: #FFFFFF;
-}
-
 .heroForm+p {
     font-size: 14px;
     line-height: 20px;
+}
+
+.experimentBlue {
+    background-color: blue;
+    width: 200px;
+    height: 400px;
+    color: white;
 }
