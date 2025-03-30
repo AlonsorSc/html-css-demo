@@ -84,14 +84,19 @@ footer a {
 #heroButton {
     background-color: #4262FF;
     color: #FFFFFF;
+}
+
 .heroForm+p {
     font-size: 14px;
     line-height: 20px;
 }
 
 .experimentBlue {
-    background-color: blue;
+    background:#051fa1;
     width: 200px;
     height: 400px;
     color: white;
+    padding: 10px 20px 50px 30px;
+    border: 5px solid green;
+    margin: 10px auto;
 }
