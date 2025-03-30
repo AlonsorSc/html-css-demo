@@ -3,54 +3,81 @@
     font-family: Roboto;
 }
 
-header a {
+body {
+    margin: 0;
+}
+
+nav a {
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
 }
 
-h1,
-h2 {
-    color: #050038;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 33px 0 34px 50px;
+}
+
+h1 {
     font-size: 48px;
     line-height: 56px;
     letter-spacing: 1px;
     font-weight: 400;
+    margin: 60px 0 17px 40px;
 }
 
-p {
+.firstSection p {
     font-size: 18px;
     line-height: 24px;
+    margin: 0 0 55px 40px;
 }
 
-.link {
-    color: #4262FF;
+#email {
+    width: 440px;
+    height: 48px;
+    padding: 0;
+    margin-left: 40px;
+    border-radius: 32px;
+    border: 1px solid #9B99AF;
+    box-sizing: border-box;
+}
+
+#heroButton {
+    width: 440px;
+    height: 51px;
+    padding: 0;
+    margin: 10px 0 8px 40px;
+    background-color: #4262FF;
+    border-radius: 32px;
+    border: 1px solid #4262FF;
+    box-sizing: border-box;
+}
+
+#heroButton span {
+    color: #FFFFFF;
+    font-size:18px ;
+    line-height: 27px;
+}
+
+.noCard {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 40px;
+}
+
+.numberUsers {
+    margin: 52px 0 214px 40px;
+}
+
+.users {
     font-size: 18px;
     line-height: 24px;
-}
-
-.link:hover {
-    color: #1331cb;
-}
-
-#heroButton:hover {
-    background-color: #1331cb;
-}
-
-#heroButton:active {
-    background-color: #051fa1;
+    margin-right: 20px;
 }
 
 .heroForm input:focus {
     background-color: aqua;
-}
-
-p:not(.paragraphSecond) {
-    color: red
-}
-
-nav ul {
-    list-style: none;
 }
 
 .sectionList {
@@ -67,11 +94,16 @@ nav ul {
     opacity: 0.6;
 }
 
-.numberUsers {
-    color: #050038;
+
+
+.link {
+    color: #4262FF;
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: 0.25px;
+}
+
+.link:hover {
+    color: #1331cb;
 }
 
 footer a {
@@ -79,11 +111,6 @@ footer a {
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
-}
-
-#heroButton {
-    background-color: #4262FF;
-    color: #FFFFFF;
 }
 
 .heroForm+p {
