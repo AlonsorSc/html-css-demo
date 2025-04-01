@@ -1,6 +1,7 @@
 * {
     color: #050038;
     font-family: Roboto;
+    box-sizing: border-box;
 }
 
 body {
@@ -16,10 +17,12 @@ nav a {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 33px 0 34px 50px;
+    margin: 0;
+    border-bottom: 1px solid #F0F0F0;
 }
 
-h1 {
+h1,
+h2 {
     font-size: 48px;
     line-height: 56px;
     letter-spacing: 1px;
@@ -31,6 +34,8 @@ h1 {
     font-size: 18px;
     line-height: 24px;
     margin: 0 0 55px 40px;
+    width: 424px;
+    height: 48px;
 }
 
 #email {
@@ -40,7 +45,6 @@ h1 {
     margin-left: 40px;
     border-radius: 32px;
     border: 1px solid #9B99AF;
-    box-sizing: border-box;
 }
 
 #heroButton {
@@ -51,12 +55,11 @@ h1 {
     background-color: #4262FF;
     border-radius: 32px;
     border: 1px solid #4262FF;
-    box-sizing: border-box;
 }
 
 #heroButton span {
     color: #FFFFFF;
-    font-size:18px ;
+    font-size: 18px;
     line-height: 27px;
 }
 
@@ -67,17 +70,42 @@ h1 {
 }
 
 .numberUsers {
-    margin: 52px 0 214px 40px;
+    margin: 52px 20px 50px 40px;
 }
 
-.users {
-    font-size: 18px;
-    line-height: 24px;
+.companyImg img {
     margin-right: 20px;
 }
 
-.heroForm input:focus {
-    background-color: aqua;
+.secondSection p {
+    margin: 19px 18px 39px 40px;
+    opacity: 0.6;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    width: 436px;
+    height: 120px;
+}
+
+.link {
+    color: #4262FF;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 40px;
+}
+
+.anyinstrumentImg {
+    margin-left: 40px;
+}
+
+.finalySection p {
+    margin: 19px 18px 39px 40px;
+    opacity: 0.6;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    width: 429px;
+    height: 120px;
 }
 
 .sectionList {
@@ -86,44 +114,15 @@ h1 {
     /* list-style: url(../img/Frame.jpg); */
 }
 
-.sectionList li::marker {
-    content: url(../img/Frame.jpg);
+#footer {
+    background-color: #050038;
+    height: 117px;
 }
 
-.paragraphSecond {
-    opacity: 0.6;
-}
-
-
-
-.link {
-    color: #4262FF;
-    font-size: 18px;
-    line-height: 24px;
-}
-
-.link:hover {
-    color: #1331cb;
-}
-
-footer a {
+footer a,
+.miroCopy {
     color: #FFFFFF;
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
-}
-
-.heroForm+p {
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.experimentBlue {
-    background:#051fa1;
-    width: 200px;
-    height: 400px;
-    color: white;
-    padding: 10px 20px 50px 30px;
-    border: 5px solid green;
-    margin: 10px auto;
 }
