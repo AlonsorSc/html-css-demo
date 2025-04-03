@@ -4,6 +4,53 @@
     background-color: #374151;
 }
 
+body {
+    margin: 0;
+}
+
+header {
+    margin: 0 0 60px 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    font-size: 16px;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav>a {
+    font-size: 18px;
+}
+
+input[placeholder="Поиск"] {
+    font-size: 16px;
+    opacity: 0.6;
+    padding: 10px 128px 11px 49px;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 38px;
+    margin: 0 0 30px 0;
+}
+
+#search {
+    background-color: #1F293799;
+    width: 224px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #1F293799;
+    padding-left: 45px;
+    background-image: url('/3 - Домашнее задание/2-css/1-blog/img/search.svg');
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    outline: none;
+}
+
 .logo {
     background-color: #4B5563;
     width: 35px;
@@ -11,81 +58,61 @@
     border-radius: 3px;
 }
 
-header>a {
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.nav-list a,
-.nav-list ul {
-    text-decoration: none;
-    font-size: 16px;
-    list-style-type: none;
-}
-
-input[placeholder="Поиск"] {
-    font-size: 16px;
-    opacity: 0.6;
-}
-
-form input {
-    background-color: #1F293799;
-    width: 224px;
-    height: 40px;
-    border-radius: 100px;
-}
-
-.date-front,
-.author-post {
+.firstSection p {
     font-size: 14px;
     opacity: 0.6;
-    text-align: center;
+    margin: 0 0 14px 0;
 }
 
-.author-image img {
+.developer {
+    margin: 0 0 28px 0;
+}
+
+.developer img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-h1 {
-    font-size: 24px;
-    line-height: 38px;
-    font-weight: 400;
-    text-align: center;
-}
-
-.author-name {
+.authorName {
     font-size: 16px;
     line-height: 28px;
 }
 
-.main-image {
+.authorPost {
+    font-size: 14px;
+    line-height: 28px;
+    opacity: 0.6;
+}
+
+.main-image img {
     width: 896;
     height: 594;
-    top: 397px;
-    left: 272px;
     border-radius: 5px;
+    margin: 0 0 69px 0;
 }
 
-.paragraph-first {
+.pFirst p {
     font-size: 20px;
     line-height: 32px;
-    letter-spacing: 0%;
+    margin: 0 0 30px 0;
 }
 
-.paragraph-second {
+.pSecond p {
     font-size: 16px;
     line-height: 30px;
-    letter-spacing: 0%;
+    margin: 0;
 }
 
-.footer {
-    font-family: Roboto;
+.pSecond p:first-child {
+    margin-bottom: 35px;
+}
+
+footer p {
     font-size: 16px;
     line-height: 28px;
-    letter-spacing: 0%;
     opacity: 0.6;
-    text-align: center;
+    margin: 0;
+    padding: 103px 0 77px 0;
 }
