@@ -1,63 +1,61 @@
+* {
+    font-family: Open Sans, Arial, Helvetica, Verdana, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #F39494;
-    font-family: Open Sans, Arial, Helvetica, Verdana, Tahoma, sans-serif;
+    margin: 0;
 }
 
-main {
-    background-color: #FFFFFF;
-}
-
-input {
-    background-color: #F5F5F5;
-}
-
-a {
-    color: #089FE0;
+h1 {
+    color: #333333;
+    font-size: 36px;
+    line-height: 100%;
+    margin: 0;
+    padding: 72px 0 0 0;
 }
 
 button {
     background-color: #089FE0;
     color: #FFFFFF;
     font-size: 18px;
+    width: 394px;
+    height: 44px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
 }
 
-.title {
-    color: #333333;
-    font-size: 36px;
-}
+::placeholder {}
 
-.auth {
-    color: #666666;
+.account {
     font-size: 18px;
+    line-height: 100%;
+    color: #666666;
+    margin-right: 6px;
 }
 
-::placeholder {
+.auth a {
+    color: #089FE0;
+}
+
+.formAuth {
+    background-color: #FFFFFF;
+    margin: 225px 0 0 0;
+    height: 573px;
+}
+
+.userDate input {
+    background-color: #F5F5F5;
+    width: 394px;
+    height: 44px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+.userDate input[:placeholder] {
     color: #999999;
     font-size: 16px;
     font-style: italic;
-
-    main {
-        background-color: #1E1F29;
-    }
-
-    h1 {
-        color: #FAFAFA;
-        font-size: 36px;
-        font-family: 'Fira Sans', monospace;
-    }
-
-    label {
-        color: #AFB2BF;
-    }
-
-    input,
-    textarea,
-    select {
-        background: #2E2D3D;
-        color: #fafafa;
-    }
-
-    button {
-        background-color: #6C38CC;
-        color: #fafafa;
-    }
+    padding: 9px 0 9px 11px;
+}

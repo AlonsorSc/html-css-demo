@@ -10,37 +10,39 @@
 
 <body>
     <main>
-        <h1>Регистрация</h1>
-        <div class="auth">
-            <span class="account">Уже есть аккаунт?</span>
-            <span><a href="test">Войти</a></span>
-        </div>
-        <form action="/register" method="POST">
-            <div class="company-name">
-                <input type="text" name="company" placeholder="Имя компании" required />
+        <section class="formAuth">
+            <h1>Регистрация</h1>
+            <div class="auth">
+                <span class="account">Уже есть аккаунт?</span>
+                <span><a href="test">Войти</a></span>
             </div>
-            <div class="first-name">
-                <input type="text" name="name" placeholder="Имя" required />
-            </div>
-            <div class="second-name">
-                <input type="text" name="surname" placeholder="Фамилия" required />
-            </div>
-            <div class="mail">
-                <input type="email" name="email" placeholder="E-mail" required />
-            </div>
-            <div class="registration">
-                <button>
-                    Зарегистрировать
-                    <img src="/3 - Домашнее задание/2-css/2-form/img/Arrow 1.svg" alt="иконка стрелки вправо" />
-                </button>
-            </div>
-            <div class="rules-agreement">
-                <label for="rules">Я прочитал и принимаю <a href="test">Условия использования</a></label>
-                <div class="checkbox">
-                    <input type="checkbox" name="rules" id="rules" required />
+            <form action="/register" method="POST">
+                <div class="userDate">
+                    <div class="companyName">
+                        <input type="text" name="company" placeholder="Имя компании" required />
+                    </div>
+                    <div class="name">
+                        <input type="text" name="name" placeholder="Имя" required />
+                        <input type="text" name="surname" placeholder="Фамилия" required />
+                    </div>
+                    <div class="mail">
+                        <input type="email" name="email" placeholder="E-mail" required />
+                    </div>
                 </div>
-            </div>
-        </form>
+                <div class="registration">
+                    <button>
+                        Зарегистрировать
+                        <img src="/3 - Домашнее задание/2-css/2-form/img/Arrow 1.svg" alt="иконка стрелки вправо" />
+                    </button>
+                </div>
+                <div class="rulesAgreement">
+                    <label for="rules">Я прочитал и принимаю <a href="test">Условия использования</a></label>
+                    <div class="checkbox">
+                        <input type="checkbox" name="rules" id="rules" required />
+                    </div>
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 
