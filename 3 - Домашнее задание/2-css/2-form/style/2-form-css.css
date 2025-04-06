@@ -18,8 +18,8 @@ h1 {
     font-size: 36px;
     font-weight: 700;
     line-height: 100%;
-    margin: 0 0;
-    padding: 72px 0 22px 0;
+    margin: 0;
+    margin-bottom: 22px;
 }
 
 button {
@@ -31,6 +31,14 @@ button {
     border: 1px solid #FFFFFF;
     border-radius: 5px;
     margin: 0 0 22px 0;
+}
+
+.formAuth {
+    padding: 72px 94px 91px 94px;
+    background-color: #FFFFFF;
+    margin: 225px 0 0 0;
+    height: 573px;
+    border-radius: 10px;
 }
 
 .account {
@@ -48,12 +56,6 @@ button {
     color: #089FE0;
 }
 
-.formAuth {
-    background-color: #FFFFFF;
-    margin: 225px 0 0 0;
-    height: 573px;
-    border-radius: 10px;
-}
 
 .userDate input {
     background-color: #F5F5F5;
