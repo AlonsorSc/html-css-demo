@@ -97,57 +97,62 @@ footer a {
     color: #4262FF;
 }
 
-.divR {
+.cl1 {
     background-color: red;
     display: inline-block;
     margin: 20px;
     padding: 20px;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 
 }
 
-.divB {
+.cl2 {
     background-color: blue;
     display: inline-block;
     margin: 20px;
     padding: 20px;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
-.divG {
+.cl3 {
     background-color: green;
     display: inline-block;
     margin: 20px;
     padding: 20px;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
-.spanR {
-    background-color: red;
-    display: block;
-    margin: 20px;
-    padding: 20px;
-    width: 200px;
-    height: 200px;
+.static .cl2 {
+    position: static;
 }
 
-.spanB {
-    background-color: blue;
-    display: block;
-    margin: 20px;
-    padding: 20px;
-    width: 200px;
-    height: 200px;
+.relative .cl2 {
+    position: relative;
+    top: 50px;
+    left: -50px;
 }
 
-.spanG {
-    background-color: green;
-    display: block;
-    margin: 20px;
-    padding: 20px;
-    width: 200px;
-    height: 200px;
+.absolute {
+    position: relative;
+}
+
+.absolute .cl2 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.fixed .cl2 {
+    /* position: fixed; */
+    top: 50px;
+    left: 50px;
+}
+
+.sticky .cl2 {
+    position: sticky;
+    top: 50px;
+    left: 50px;
 }
