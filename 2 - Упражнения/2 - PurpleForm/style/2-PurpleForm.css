@@ -2,6 +2,7 @@
     color: #FAFAFA;
     font-family: Fira Sans;
     margin: 0;
+    box-sizing: border-box;
 }
 
 main {
@@ -20,7 +21,67 @@ h1 {
     text-align: center;
 }
 
-.infoForm input {
-    width: 697;
-    height: 58;
+input,
+select {
+    background-color: #2E2D3D;
+    width: 697px;
+    height: 58px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 16px;
+    padding: 27px 48px 12px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #565373;
+}
+
+textarea {
+    background-color: #2E2D3D;
+    width: 697px;
+    height: 135px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    padding: 27px 24px 12px;
+}
+
+button {
+    background-color: #6C38CC;
+    width: 697px;
+    height: 46px;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.field {
+    position: relative;
+}
+
+.field img {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+}
+
+.divForm label {
+    color: #AFB2BF;
+    font-size: 12px;
+    line-height: 120%;
+    position: absolute;
+    top: 12px;
+    left: 48px;
+}
+
+.divComments label {
+    color: #AFB2BF;
+    font-size: 12px;
+    line-height: 120%;
+    position: absolute;
+    top: 12px;
+    left: 24px;
 }

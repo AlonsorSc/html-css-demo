@@ -19,45 +19,35 @@
         <section class="form">
             <h1>Свяжитесь со мной</h1>
             <form action="/test/" class="formHero">
-                <div class="infoForm">
-                    <div class="email">
-                        <label for="email"><img src="/2 - Упражнения/2 - PurpleForm/img/message.svg"
-                                alt="иконка конверта почты">E-mail*</label>
-                        <input type="email" name="email" id="email" value="123@gmail.com" required />
+                <div class="divForm">
+                    <div class="field">
+                        <img src="/2 - Упражнения/2 - PurpleForm/img/message.svg" alt="иконка сообщения">
+                        <label for="email">E-mail*</label>
+                        <input type="email" name="email" id="email" placeholder="Введите email" value="123@gmail.com"
+                            required />
                     </div>
-                    <div class="telegram">
-                        <label for="telegram"> <img src="/2 - Упражнения/2 - PurpleForm/img/telegram.svg"
-                                alt="иконка стрелка телеграмма">Telegram</label>
-                        <input type="text" name="telegram" id="telegram" />
+                    <div class="field">
+                        <img src="./img/telegram.svg" alt="иконка тг">
+                        <label for="telegram">Telegram*</label>
+                        <input type="text" name="telegram" id="telegram" placeholder="Введите ваш Телеграмм @name" />
                     </div>
-                    <div class="topic">
-                        <label for="topic"><img src="/2 - Упражнения/2 - PurpleForm/img/topic.svg"
-                                alt="иконка облачка текста">Тема*</label>
+                    <div class=" field">
+                        <img src="./img/topic.svg" alt="иконка топика">
+                        <label for="topic">Тема*</label>
                         <select name="topic" id="topic" required>
                             <option value="courses">Приобретение курсов</option>
                             <option value="training&audit">Персональные тренинги и аудит</option>
                         </select>
                     </div>
                 </div>
-
-                <div class="comments">
-                    <label for="comments">Комментарий</label>
-                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-                </div>
-                <div class="approveRules">
-                    <label for="rules">Согласен с
-                        <a href="https://cdn-bucket.hb.ru-msk.vkcs.cloud/purple-images/documents/new/user-agreement.pdf"
-                            target="_blank">
-                            пользовательским соглашением
-                        </a>
-                    </label>
-                    <input type="checkbox" name="rules" id="rules" required />
+                <div class="divComments">
+                    <div class="field">
+                        <label for="comments">Комментарий</label>
+                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                    </div>
                 </div>
                 <button>Отправить</button>
-                <div>
-                    <label for="test">test</label>
-                    <input type="text" id="test123">
-                </div>
+
             </form>
         </section>
     </main>
