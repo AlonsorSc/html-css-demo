@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-PurpleForm</title>
+    <link rel="stylesheet" href="/2 - Упражнения/2 - PurpleForm/style/2-PurpleForm.css">
+</head>
+
+<body>
+    <main>
+        <h1>Свяжитесь со мной</h1>
+        <form action="/test/" class="formHero">
+            <div class="email">
+                <label for="email"><img src="/2 - Упражнения/2 - PurpleForm/img/message.svg"
+                        alt="иконка конверта почты">E-mail*</label>
+                <input type="email" name="email" id="email" value="123@gmail.com" required />
+            </div>
+            <div class="telegram">
+                <label for="telegram"> <img src="/2 - Упражнения/2 - PurpleForm/img/telegram.svg"
+                        alt="иконка стрелка телеграмма">Telegram</label>
+                <input type="text" name="telegram" id="telegram" />
+            </div>
+            <div class="topic">
+                <label for="topic"><img src="/2 - Упражнения/2 - PurpleForm/img/topic.svg"
+                        alt="иконка облачка текста">Тема*</label>
+                <select name="topic" id="topic" required>
+                    <option value="courses">Приобретение курсов</option>
+                    <option value="training&audit">Персональные тренинги и аудит</option>
+                </select>
+            </div>
+            <div class="comments">
+                <label for="comments">Комментарий</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </div>
+            <div class="approveRules">
+                <label for="rules">Согласен с
+                    <a href="https://cdn-bucket.hb.ru-msk.vkcs.cloud/purple-images/documents/new/user-agreement.pdf"
+                        target="_blank">
+                        пользовательским соглашением
+                    </a>
+                </label>
+                <input type="checkbox" name="rules" id="rules" required />
+            </div>
+            <button>Отправить</button>
+        </form>
+    </main>
+</body>
+
+</html>
