@@ -5,65 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1-blog</title>
-    <link rel="stylesheet" href="/Домашнее задание/1-blog/style/1-blog-css.css">
+    <link rel="stylesheet" href="/3 - Домашнее задание/2-css/1-blog/style/1-blog-css.css">
 </head>
 
 <body>
     <header>
-        <a href="/home/">
-            <div>B</div>
-            <div>Мой блог</div>
-        </a>
         <nav>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="/test/">HTML и CSS</a></li>
-                    <li><a href="/test/">Frontend</a></li>
-                    <li><a href="/test/">Backend</a></li>
-                </ul>
-            </div>
-            <div class="search">
-                <form action="/test/">
-                    <label for="search"><img src="/Домашнее задание/1-blog/img/search.svg"
-                            alt="Иконка увеличительная лупа" /></label>
-                    <div class="search-input">
-                        <input type="search" name="search" placeholder="Поиск" id="search" />
-                    </div>
-                </form>
-            </div>
+            <a href="/home/">
+                <div class="logo">В</div>
+                <div class="nameBlog">Мой блог</div>
+            </a>
+            <ul>
+                <li><a href="/test/">HTML и CSS</a></li>
+                <li><a href="/test/">Frontend</a></li>
+                <li><a href="/test/">Backend</a></li>
+            </ul>
+            <form action="/test/">
+                <div class="search">
+                    <input type="search" name="search" placeholder="Поиск" id="search" </div>
+            </form>
         </nav>
     </header>
     <main>
-        <section>
-            <div class="date-front">
-                <p>
-                    FRONTEND 12 мая 2024
-                </p>
-            </div>
-            <div class="title">
-                <h2>
-                    Теория цвета - Как цвет влияет на поведение <br />
-                    потребителей
-                </h2>
-            </div>
-            <div>
-                <div class="authod-image">
-                    <img src="/Домашнее задание/1-blog/img/girl-developer.png" alt="Аватар Натальи Васильевой">
-                </div>
+        <section class="firstSection">
+            <p>
+                FRONTEND 12 мая 2024
+            </p>
+            <h1>
+                Теория цвета - Как цвет влияет на поведение потребителей
+            </h1>
+            <div class="developer">
+                <img src="/3 - Домашнее задание/2-css/1-blog/img/girl-developer.png" alt="Аватар Натальи Васильевой">
                 <div class="author">
-                    <p>
-                        <span class="author-name">Наталья Васильева</span> <br />
-                        <span class="author-post">Разработчик</span>
-                    </p>
+                    <div class="authorName">Наталья Васильева</div>
+                    <div class="authorPost">Разработчик</div>
                 </div>
             </div>
             <div class="main-image">
-                <img src="/Домашнее задание/1-blog/img/main-desktop-img.png"
+                <img src="/3 - Домашнее задание/2-css/1-blog/img/main-desktop-img.png"
                     alt="Основное изображение эплмоноблока(непомнюназвание)" width="896px" height="594px" />
             </div>
         </section>
         <section>
-            <div class="paragraph-first">
+            <div class="pFirst">
                 <p>
                     Теория цвета — это особенности эмоционального восприятия человеком <br />
                     тех или иных цветовых решений. Цвета и различные их комбинации <br />
@@ -75,7 +59,7 @@
                     повысить конверсию.
                 </p>
             </div>
-            <div class="paragraph-second">
+            <div class="pSecond">
                 <p>
                     Универсального ответа на вопрос, как тот или иной цвет влияет на разных людей, нет. <br />
                     Эмоциональная и поведенческая реакция каждого человека зависит от личного опыта. <br />
@@ -83,7 +67,10 @@
                     поведение пользователей.
                 </p>
                 <p>
-                    В исследовании «Влияние цвета на маркетинг» (Impact of color on marketing) говорится, что <br />
+                    В исследовании «Влияние цвета на маркетинг» <a
+                        href="https://www.researchgate.net/publication/235320162_Impact_of_color_on_marketing">(Impact
+                        of color on marketing)</a> говорится,
+                    что <br />
                     использование разных цветов может существенно влиять на настроение и поведение <br />
                     потребителей. Утверждается, что от 60 до 90% покупателей (в зависимости от категории <br />
                     продукта) дают положительную или отрицательную оценку товару, основываясь только на <br />

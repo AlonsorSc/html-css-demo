@@ -1,0 +1,118 @@
+* {
+    font-family: roboto, sans-serif;
+    color: #FFFFFF;
+    background-color: #374151;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    margin: 0 0 60px 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    font-size: 16px;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav>a {
+    font-size: 18px;
+}
+
+input[placeholder="Поиск"] {
+    font-size: 16px;
+    opacity: 0.6;
+    padding: 10px 128px 11px 49px;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 38px;
+    margin: 0 0 30px 0;
+}
+
+#search {
+    background-color: #1F293799;
+    width: 224px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #1F293799;
+    padding-left: 45px;
+    background-image: url('/3 - Домашнее задание/2-css/1-blog/img/search.svg');
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    outline: none;
+}
+
+.logo {
+    background-color: #4B5563;
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+}
+
+.firstSection p {
+    font-size: 14px;
+    opacity: 0.6;
+    margin: 0 0 14px 0;
+}
+
+.developer {
+    margin: 0 0 28px 0;
+}
+
+.developer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.authorName {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.authorPost {
+    font-size: 14px;
+    line-height: 28px;
+    opacity: 0.6;
+}
+
+.main-image img {
+    width: 896;
+    height: 594;
+    border-radius: 5px;
+    margin: 0 0 69px 0;
+}
+
+.pFirst p {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0 0 30px 0;
+}
+
+.pSecond p {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.pSecond p:first-child {
+    margin-bottom: 35px;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 0.6;
+    margin: 0;
+    padding: 103px 0 77px 0;
+}
