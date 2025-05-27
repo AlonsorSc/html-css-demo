@@ -7,6 +7,12 @@
     <title>1-miro</title>
     <!-- <link rel="stylesheet" href="/2 - Упражнения/1 - Miro/style/1-miro.css"> -->
     <link rel="stylesheet" href="/2 - Упражнения/1 - Miro/style/1-miro-edited.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/font-roboto.css">
 </head>
 
 <body>
@@ -22,96 +28,82 @@
         </nav>
     </header>
     <main>
+        <section class="exp">
+            <div>DIV1</div>
+        </section>
         <section class="firstSection">
-            <h1>
-                Место для командной работы
-            </h1>
-            <p class="heroText">
-                Интерактивная онлайн-доска для совместной работы команд — в любое время, в любом месте.
-            </p>
-            <form action="/register" method="get" class="heroForm">
-                <input type="email" name="email" id="email">
-                <button id="heroButton">Начать бесплатно</button>
-            </form>
-            <p>Всегда бесплатно — кредитная карта не нужна</p>
-            <div>
-                <img src="/2 - Упражнения/1 - Miro/img/headerimage-without-text 1@2x.png"
-                    alt="Основное окно интерфейса Miro" id="heroImage">
+            <div class="heroImage">
+                <img src="./img/imgFirst.svg" alt="Основное окно интерфейса Miro" id="heroImage">
             </div>
-            <div class="numberUsers">
-                <div>45M+ пользователей</div>
-                <div class="companyImg">
-                    <img src="/2 - Упражнения/1 - Miro/img/Walmart.svg" alt="Walmart icont" />
-                    <img src="/2 - Упражнения/1 - Miro/img/Cisco.svg" alt="Cisco icon" />
-                    <img src="/2 - Упражнения/1 - Miro/img/Deloitte.svg" alt="Deloitte icon" />
-                    <img src="/2 - Упражнения/1 - Miro/img/Volvo.svg" alt="Volco icon" />
+            <div class="heroCount">
+                <h1>
+                    Место для командной работы
+                </h1>
+                <p class="heroText">
+                    Интерактивная онлайн-доска для совместной работы команд — в любое время, в любом месте.
+                </p>
+                <form action="/register" method="get" class="heroForm">
+                    <input type="email" name="email" id="email">
+                    <button id="heroButton">Начать бесплатно</button>
+                </form>
+                <p class="secondText">Всегда бесплатно — кредитная карта не нужна</p>
+                <div class="numberUsers">
+                    <span class="numberCount">45M+ пользователей</span>
+                    <div class="firmImage">
+                        <img src="./img/firm/Walmart.svg" alt="Walmart icont" />
+                        <img src="./img/firm/Cisco.svg" alt="Cisco icon" />
+                        <img src="./img/firm/Deloitte.svg" alt="Deloitte icon" />
+                        <img src="./img/firm/Volvo.svg" alt="Volco icon" />
+                    </div>
                 </div>
             </div>
         </section>
         <section class="secondSection">
-            <h2>
-                Работайте вместе, где бы вы ни находились
-            </h2>
-            <p class="sectionText">
-                Работая в офисе, удалённо или в гибридном формате, с Miro ваша команда может общаться, сотрудничать и
-                совместно заниматься творчеством в одном пространстве, из любой точки мира.
-            </p>
-            <a href="/test/" class="link">Узнать больше</a>
-            <div class="anyinstrumentImg">
-                <img src="/2 - Упражнения/1 - Miro/img/IMAGE.png" alt="Изображение с разными видами доступов к сервису">
+            <div class="heroSecondImage">
+                <img src="./img/img2.svg" alt="Изображение с разными видами доступов к сервису">
+            </div>
+            <div class="heroSecondCount">
+                <h2>
+                    Работайте вместе, где бы вы ни находились
+                </h2>
+                <p class="heroSecondText heroText">
+                    Работая в офисе, удалённо или в гибридном формате, с Miro ваша команда может общаться, сотрудничать
+                    и
+                    совместно заниматься творчеством в одном пространстве, из любой точки мира.
+                </p>
+                <a href="/test/" class="link">Узнать больше</a>
             </div>
         </section>
         <section class="finalySection">
-            <img src="/2 - Упражнения/1 - Miro/img/3-image.png"
-                alt="Ноутбук у которого открыто приложение и закрыты лишние вкладки" width="550px" height="498px">
-            <h2>
-                Закройте лишние <br />
-                вкладки - всё <br />
-                уже здесь
-            </h2>
-            <p class="sectionText">
-                Редактируете ли вы документы в Google Docs, работаете над задачами в Jira или созваниваетесь в Zoom,
-                Miro предлагает более 100 интеграций с уже известными и полюбившимися вам инструментами.
-            </p>
-            <a href="/test/" class="link">Узнать больше</a>
+            <div class="heroFinalyImage">
+                <img src="./img/img3.svg" alt="Удобная работа с вкладками">
+            </div>
+            <div class="heroFinalyCount">
+                <h2>
+                    Закройте лишние вкладки - всё уже здесь
+                </h2>
+                <p class="heroSecondText heroText">
+                    Редактируете ли вы документы в Google Docs, работаете над задачами в Jira или созваниваетесь в Zoom,
+                    Miro предлагает более 100 интеграций с уже известными и полюбившимися вам инструментами.
+                </p>
+                <a href="/test/" class="link">Узнать больше</a>
+            </div>
         </section>
-        <section class="sticky">
-            <div class="cl1">1</div>
-            <div class="cl2">2</div>
-            <div class="cl3">3</div>
-        </section>
-        <section class="static">
-            <div class="cl1">1</div>
-            <div class="cl2">2</div>
-            <div class="cl3">3</div>
-        </section>
-        <section class="relative">
-            <div class="cl1">1</div>
-            <div class="cl2">2</div>
-            <div class="cl3">3</div>
-        </section>
-        <section class="absolute">
-            <div class="cl1">1</div>
-            <div class="cl2">2</div>
-            <div class="cl3">3</div>
-        </section>
-        <section class="fixed">
-            <div class="cl1">1</div>
-            <div class="cl2">2</div>
-            <div class="cl3">3</div>
+        <section class="lastSection">
+            <div>
+                <h2>Создан для всех типов команд</h2>
+                <nav>
+                    <ul>
+                        <li><a href="/test/">Продукт</a></li>
+                        <li><a href="/test/">Решения</a></li>
+                        <li><a href="/test/">Ресурсы</a></li>
+                        <li><a href="/test/">Предприятия</a></li>
+                        <li><a href="/test/">Тарифы</a></li>
+                    </ul>
+                </nav>
+            </div>
         </section>
     </main>
-
-    <footer>
-        <div class="miroCopy">
-            &reg; 2023 Miro
-        </div>
-        <div class="footerLinks">
-            <a href="/test/">Условия пользования</a>
-            <a href="/test/">Политика конфиденциальности</a>
-            <a href="/test/">Управление файлами cookies</a>
-        </div>
-    </footer>
 </body>
 
 </html>
