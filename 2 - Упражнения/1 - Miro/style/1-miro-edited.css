@@ -57,7 +57,8 @@ nav li {
     display: inline-block;
     margin: 0 0 17px 0;
     text-align: left;
-    font-size: 48px;
+    /* font-size: 48px; */
+    font-size: 4vw;
     line-height: 56px;
     font-weight: 400;
     width: 285px;
@@ -189,6 +190,7 @@ nav li {
 
 .heroFinalyCount {
     float: right;
+
 }
 
 /* Последняя секция */
@@ -199,40 +201,24 @@ nav li {
 
 /* Эксперементальная секция */
 
-.exp div {
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 50px;
+    width: 1000px;
+
+}
+
+.items {
     background-color: #2d48d3;
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-    color: white;
-    font-size: 24px;
-    animation: my-move 2s ease forwards infinite;
+    flex-basis: 400px;
 }
 
-.exp:hover div {
-    animation-play-state: paused;
+.item1 {
+    flex-grow: 1;
 }
 
-@keyframes my-move {
-    25% {
-        transform: translateX(100%) rotate(45deg);
-    }
-
-    50% {
-        transform: translateX(100%) translateY(-100%) rotate(90deg);
-    }
-
-    75% {
-        transform: translateX(0%) translateY(-100%) rotate(135deg);
-    }
-
-    100% {
-        transform: translateX(0%) translateY(0%) rotate(360deg);
-    }
-}
-
-@media (max-width: 605px) {
-    .heroImage {
-        display: none;
-    }
+.item2 {
+    flex-grow: 3;
 }
