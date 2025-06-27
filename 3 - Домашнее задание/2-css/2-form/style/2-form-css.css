@@ -1,130 +1,165 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
 
 body {
     background-color: #F39494;
-    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     color: #333333;
     font-size: 36px;
     font-weight: 700;
-    line-height: 100%;
-    margin: 0;
-    margin-bottom: 22px;
+    line-height: 56px;
 }
 
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    gap: 22px;
+}
+
+input,
 button {
-    background-color: #089FE0;
-    color: #FFFFFF;
-    font-size: 18px;
+    padding: 9px 0px 9px 11px;
     width: 394px;
     height: 44px;
-    border: 1px solid #FFFFFF;
-    border-radius: 5px;
-    margin: 0 0 22px 0;
+    font-style: italic;
+    color: #999999;
 }
 
 .formAuth {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 582px;
     padding: 72px 94px 91px 94px;
     background-color: #FFFFFF;
-    margin: 225px 0 0 0;
-    height: 573px;
     border-radius: 10px;
+}
+
+.auth {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 9px;
+    margin: 0 0 47px 0;
+    align-items: baseline;
 }
 
 .account {
     font-size: 18px;
-    line-height: 100%;
+    line-height: 26px;
     color: #666666;
-    margin-right: 6px;
 }
 
-.auth {
-    margin: 0 0 47px 0;
+.inputArea {
+    margin: 0 0 22px 0;
+    display: flex;
+    flex-flow: column;
+    gap: 22px;
 }
 
-.auth a {
-    color: #089FE0;
+.name {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
+.name input {
+    width: 100%;
+}
 
-.userDate input {
+.inputArea input {
     background-color: #F5F5F5;
-    width: 394px;
-    height: 44px;
     border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+.inputArea input:focus {
+    background-color: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+    font-style: italic;
+    color: #333333;
+    font-weight: 600;
+    outline: none;
+}
+
+.inputArea input:not(:placeholder-shown) {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.inputArea input:not(:focus):not(:placeholder-shown) {
+    background-color: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+    font-style: normal;
+    color: #333333;
+    font-weight: 600;
+}
+
+.buttonRegistration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 100%;
+    position: relative;
+    background-color: #089FE0;
+    border: 1px solid #089FE0;
+    color: #FFFFFF;
     border-radius: 5px;
     margin-bottom: 22px;
 }
 
-.userDate input:focus {
-    border: 1px solid #F5F5F5;
-    background-color: #FFFFFF;
+.arrow {
+    position: absolute;
+    right: 24px;
+}
+
+.buttonRegistration:hover {
+    background-color: #0da9ec
+}
+
+.buttonRegistration:focus {
     outline: none;
-    font-weight: 700;
 }
 
-.userDate input:focus::placeholder {
-    color: transparent;
+.agreement {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 4px;
 }
 
-.userDate input:not(:placeholder-shown) {
-    font-weight: 700;
-}
-
-.name input {
-    width: 197px;
-}
-
-.name input[name="name"] {
-    float: left;
-}
-
-.userDate input::placeholder {
-    color: #999999;
-    font-size: 16px;
-    font-style: italic;
-    padding: 9px;
-}
-
-.registration img {
-    float: right;
-    margin-right: 22px;
-}
-
-.rulesAgreement label {
-    color: #666666;
-    font-size: 14px;
-    line-height: 100%;
-}
-
-.rulesAgreement a {
-    color: #089FE0;
-    text-decoration: none;
-    margin-left: 4px;
-}
-
-.checkbox input {
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #EEEEEE;
-    border-radius: 5px;
+.agreement input {
+    height: 16px;
+    width: 16px;
     background-color: #F5F5F5;
-    cursor: pointer;
-    margin: 0;
-    margin-right: 4px;
+    border: 1px solid #EEEEEE;
 }
 
-.checkbox input:checked {
-    background-image: url(../img/checkbox.svg);
+.agreementRules a {
+    font-size: 14px;
+    color: #666666;
+    margin-left: 10px;
+    color: #089FE0;
 }
