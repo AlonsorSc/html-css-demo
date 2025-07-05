@@ -38,6 +38,8 @@ nav a {
     text-decoration: none;
 }
 
+/* Первая секция */
+
 .firstSection {
     display: flex;
     gap: 60px;
@@ -113,3 +115,5 @@ nav a {
     display: flex;
     gap: 19px;
 }
+
+/* Вторая секция */
