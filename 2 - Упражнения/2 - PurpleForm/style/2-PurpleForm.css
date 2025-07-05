@@ -9,8 +9,8 @@ main {
     padding: 48px;
     background-color: #1E1F29;
     border-radius: 10px;
-    width: 793px;
-    height: 598px;
+    min-width: 375px;
+    max-width: 600px;
 }
 
 h1 {
@@ -24,7 +24,8 @@ h1 {
 input,
 select {
     background-color: #2E2D3D;
-    width: 697px;
+    /* width: 697px; */
+    width: 100%;
     height: 58px;
     border-radius: 10px;
     border: none;
@@ -39,8 +40,8 @@ textarea::placeholder {
 
 textarea {
     background-color: #2E2D3D;
-    width: 697px;
-    height: 135px;
+    width: 100%;
+    height: 100%;
     border: none;
     border-radius: 10px;
     margin-bottom: 24px;
@@ -49,7 +50,7 @@ textarea {
 
 button {
     background-color: #6C38CC;
-    width: 697px;
+    width: 100%;
     height: 46px;
     border: none;
     border-radius: 10px;

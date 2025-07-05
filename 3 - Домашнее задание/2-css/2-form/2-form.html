@@ -15,17 +15,19 @@
 <body>
     <main>
         <section class="formAuth">
-            <h1>Регистрация</h1>
-            <div class="auth">
-                <span class="account">Уже есть аккаунт?</span>
-                <span><a href="test">Войти</a></span>
+            <div class="headForm">
+                <h1>Регистрация</h1>
+                <div class="auth">
+                    <div class="account">Уже есть аккаунт?</div>
+                    <div class="enter"><a href="test">Войти</a></div>
+                </div>
             </div>
+
             <form action="/register" method="POST">
-                <div class="userDate">
+                <div class="inputArea">
                     <div class="companyName">
                         <input type="text" name="company" placeholder="Имя компании" required />
                     </div>
-
                     <div class="name">
                         <input type="text" name="name" placeholder="Имя" required />
                         <input type="text" name="surname" placeholder="Фамилия" required />
@@ -34,17 +36,16 @@
                         <input type="email" name="email" placeholder="E-mail" required />
                     </div>
                 </div>
-                <div class="registration">
-                    <button>
-                        Зарегистрировать
-                        <img src="/3 - Домашнее задание/2-css/2-form/img/Arrow 1.svg" alt="иконка стрелки вправо" />
-                    </button>
-                </div>
-                <div class="rulesAgreement">
-                    <div class="checkbox">
-                        <input class="checkboxArea" type="checkbox" name="rules" id="rules" required />
+                <button class="buttonRegistration">
+                    <span class="reg">Зарегистрировать</span>
+                    <img class="arrow" src="/3 - Домашнее задание/2-css/2-form/img/Arrow 1.svg"
+                        alt="иконка стрелки вправо" />
+                </button>
+                <div class="agreement">
+                    <input type="checkbox" name="rules" id="rules" required />
+                    <span class="agreementRules">
                         <label for="rules">Я прочитал и принимаю<a href="test">Условия использования</a></label>
-                    </div>
+                    </span>
                 </div>
             </form>
         </section>
