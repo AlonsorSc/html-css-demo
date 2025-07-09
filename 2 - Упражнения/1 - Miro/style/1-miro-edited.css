@@ -38,6 +38,13 @@ nav a {
     text-decoration: none;
 }
 
+.link {
+    font-size: 18px;
+    line-height: 24px;
+    color: #4262FF;
+    text-decoration: none;
+}
+
 /* Первая секция */
 
 .firstSection {
@@ -117,3 +124,165 @@ nav a {
 }
 
 /* Вторая секция */
+
+.secondSection {
+    display: flex;
+    position: relative;
+}
+
+.heroImageTwo {
+    width: 550px;
+    height: 535px;
+    position: absolute;
+    left: 570px;
+    top: -88px;
+}
+
+.leftColumnTwo h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 19px;
+}
+
+.leftColumnTwo p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    opacity: 0.6;
+    margin-bottom: 39px;
+}
+
+/* Третья секция */
+
+.sectionThree {
+    display: flex;
+    gap: 115px;
+    position: relative;
+}
+
+.rightColumntThree {
+    position: absolute;
+    left: 665px;
+    top: 63px;
+}
+
+.heroImageThree {
+    width: 550px;
+    height: 498px;
+}
+
+/* Четвертая секция */
+
+.sectionFour {
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    margin-bottom: 43px;
+}
+
+.headerFour h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.navigationFour {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigationFour ul {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    justify-content: flex-start;
+}
+
+.navigationFour li {
+    border: 1px solid #F2F2F2;
+    border-radius: 24px;
+    padding: 14px 18px;
+}
+
+.navigationFour li:hover {
+    background-color: #F1F3FD;
+    border: 1px solid #F1F3FD;
+}
+
+.bottomSectionFour {
+    display: flex;
+    gap: 60px;
+}
+
+.leftColumnFour ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 32px;
+    margin-left: 50px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.leftColumnFour li {
+    margin-bottom: 18px;
+    padding-left: 28px;
+    position: relative;
+}
+
+.leftColumnFour li::before {
+    content: url(../img/Frame.svg);
+    position: absolute;
+    left: -14px;
+    top: -2px;
+    color: black;
+}
+
+.linkInform {
+    margin-bottom: 70px;
+    margin-left: 19px;
+}
+
+.bottomCompany {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-left: 19px;
+}
+
+.bottomText {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.bottomImage img {
+    margin-right: 32px;
+}
+
+/* Пятая секция - footer */
+
+footer {
+    background-color: #050038;
+    max-width: 1200px;
+    max-height: 117px;
+    margin: 0 auto;
+    padding: 47px 40px;
+}
+
+footer ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 33px;
+    list-style: none;
+}
+
+footer a,
+.copyright {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
