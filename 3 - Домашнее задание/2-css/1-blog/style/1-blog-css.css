@@ -1,78 +1,157 @@
 * {
-    font-family: roboto, sans-serif;
+    box-sizing: border-box;
     color: #FFFFFF;
     background-color: #374151;
-}
-
-body {
     margin: 0;
-}
-
-header {
-    margin: 0 0 60px 0;
-}
-
-nav a {
-    text-decoration: none;
-}
-
-nav ul {
-    font-size: 16px;
-    list-style-type: none;
     padding: 0;
 }
 
-nav>a {
-    font-size: 18px;
+nav {
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 81px 0;
+    position: relative;
+    align-items: baseline;
+    margin-bottom: 69px;
 }
 
-input[placeholder="Поиск"] {
-    font-size: 16px;
-    opacity: 0.6;
-    padding: 10px 128px 11px 49px;
+section,
+footer {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
     font-size: 24px;
     line-height: 38px;
-    margin: 0 0 30px 0;
+    display: inline-flex;
+    flex-direction: column;
 }
 
-#search {
-    background-color: #1F293799;
-    width: 224px;
-    height: 40px;
-    border-radius: 100px;
-    border: 1px solid #1F293799;
-    padding-left: 45px;
-    background-image: url('/3 - Домашнее задание/2-css/1-blog/img/search.svg');
-    background-repeat: no-repeat;
-    background-position: 15px center;
-    outline: none;
+.secondText {
+    display: flex;
+    justify-content: center;
 }
 
-.logo {
+/*Навигация*/
+
+.headerLogo {
+    display: flex;
+    align-items: baseline;
+    gap: 23px;
+    margin-right: 77px;
+}
+
+.headerLogoIcon {
+    border: 1px solid #4B5563;
     background-color: #4B5563;
     width: 35px;
     height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 3px;
 }
 
-.firstSection p {
-    font-size: 14px;
+.headerLogoIcon a {
+    text-decoration: none;
+}
+
+.nameBlog {
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.headerNavigation ul {
+    display: flex;
+    gap: 52px;
+    list-style: none;
+}
+
+.headerNavigation a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.headerForm {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.search {
+    position: absolute;
+    right: 0px;
+    top: 81px;
+}
+
+.search img {
+    position: absolute;
+    left: 18px;
+    top: 14px;
+}
+
+.search input {
+    width: 244px;
+    background-color: #1F293799;
     opacity: 0.6;
-    margin: 0 0 14px 0;
+    border: 1px solid #1F293799;
+    border-radius: 100px;
+    padding: 11px 49px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 100%;
+    outline: none;
+    box-shadow: none;
 }
 
-.developer {
-    margin: 0 0 28px 0;
+/*Заголовок*/
+
+.firstSectionHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 14px;
 }
 
-.developer img {
+.heroFirstText {
+    font-size: 14px;
+    line-height: 100%;
+    opacity: 0.6;
+    display: flex;
+    gap: 12px;
+}
+
+.heroFirstText .dot {
+    width: 4px;
+    height: 4px;
+    background: #FFFFFF;
+    opacity: 0.6;
+    border-radius: 100%;
+    display: inline-block;
+    align-self: center;
+}
+
+/*Автор*/
+
+.firstSectionDeveloper {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px
+}
+
+.firstSectionDeveloper img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
+    display: block;
 }
 
 .authorName {
@@ -81,38 +160,43 @@ h1 {
 }
 
 .authorPost {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 28px;
     opacity: 0.6;
 }
 
-.main-image img {
-    width: 896;
-    height: 594;
+.firstSectionPoster img {
+    width: 896px;
+    height: 594px;
     border-radius: 5px;
-    margin: 0 0 69px 0;
+    margin-bottom: 69px;
 }
 
-.pFirst p {
+/*Текст*/
+
+.secondSection {
+    display: flex;
+    gap: 25px;
+}
+
+.secondTextOne {
     font-size: 20px;
     line-height: 32px;
-    margin: 0 0 30px 0;
 }
 
-.pSecond p {
+.secondTextTwo {
     font-size: 16px;
-    line-height: 30px;
-    margin: 0;
+    line-height: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
-.pSecond p:first-child {
-    margin-bottom: 35px;
-}
+/*Футер*/
 
-footer p {
+.footer {
     font-size: 16px;
     line-height: 28px;
     opacity: 0.6;
-    margin: 0;
-    padding: 103px 0 77px 0;
+    padding: 100px 0 77px 0;
 }
